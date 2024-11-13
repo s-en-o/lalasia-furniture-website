@@ -54,6 +54,10 @@
     font-weight: 600;
 }
 
+.main h1 {
+    color: red;
+}
+
 .ctas {
     display: flex;
     gap: 16px;
@@ -153,11 +157,5 @@ a.secondary {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .logo {
-        filter: invert();
     }
 }
