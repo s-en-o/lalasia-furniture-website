@@ -1,15 +1,16 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
-import '@/app/scss/global.scss'
+import '@/scss/global.scss'
+import Nav from '@/components/nav/nav'
 
 const eudoxus = localFont({
-    src: './fonts/EudoxusSansGX.woff',
+    src: '../fonts/EudoxusSansGX.woff',
     variable: '--font-eudoxus-sans',
     weight: '100 900',
 })
 
 const eudoxus2 = localFont({
-    src: './fonts/EudoxusSansGX.woff2',
+    src: '../fonts/EudoxusSansGX.woff2',
     variable: '--font-eudoxus-sans-2',
     weight: '100 900',
 })
@@ -28,6 +29,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${eudoxus.variable} ${eudoxus2.variable}`}>
+                <Nav />
+
                 {children}
             </body>
         </html>
