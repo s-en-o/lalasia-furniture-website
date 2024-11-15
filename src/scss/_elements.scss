@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -30,6 +34,7 @@ h4,
 h5,
 h6 {
     line-height: 130%;
+    color: var(--dark-600);
 }
 
 h1 {
@@ -54,4 +59,12 @@ h5 {
 
 h6 {
     font-size: var(--font-h6);
+}
+
+p {
+    line-height: 130%;
+}
+
+img {
+    max-width: 100%;
 }

@@ -3,6 +3,13 @@
     --background2: #f3f3f3;
     --foreground: #151411;
 
+    --light-100: #fefefe;
+    --light-200: #fdfdfd;
+    --light-300: #fcfcfc;
+    --light-400: #fbfbfb;
+    --light-500: #fafafa;
+    --light-600: #f9f9f9;
+
     --dark-100: #d0d0cf;
     --dark-200: #b1b1b0;
     --dark-300: #8a8988;
@@ -10,19 +17,22 @@
     --dark-500: #3c3b39;
     --dark-600: #151411;
 
+    --grey-100: #efeff0;
+    --grey-200: #e4e4e6;
+    --grey-300: #d7d6da;
+    --grey-400: #cac8ce;
+    --grey-500: #bcbbc1;
+    --grey-600: #afadb5;
+
     --font-h1: 64px;
     --font-h2: 44px;
     --font-h3: 24px;
+    --font-h3Plus: 26px;
     --font-h4: 20px;
     --font-h5: 18px;
     --font-h6: 16px;
     --font-h6Plus: 14px;
-    --font-p1: 18px;
+    --font-p1: 14px;
+    --font-p3: 18px;
     --font-p2: 16px;
-    --font-p3: 14px;
-}
-
-@media screen and (min-width: 1024px) {
-    :root {
-    }
 }

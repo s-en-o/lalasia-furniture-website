@@ -68,6 +68,7 @@
 .nav__links-item {
     a {
         @extend %p1;
+        color: var(--dark-600);
     }
 }
 

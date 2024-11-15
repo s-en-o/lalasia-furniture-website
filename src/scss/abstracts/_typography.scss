@@ -1,5 +1,17 @@
+%h1 {
+    font-size: var(--font-h3Plus);
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-h1);
+    }
+}
+
 %p1 {
     font-size: var(--font-p1);
-    line-height: 130%;
     font-weight: 500;
+    color: var(--grey-600);
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-p3);
+    }
 }
