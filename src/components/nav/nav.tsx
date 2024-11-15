@@ -1,17 +1,20 @@
 import Link from 'next/link'
-import NavStyles from './nav.module.scss'
+import './nav.scss'
+import cart from '@/images/icons/cart.svg'
+import user from '@/images/icons/user.svg'
+import Image from 'next/image'
 
 const Nav = () => {
     return (
-        <nav className={NavStyles.nav}>
-            <Link href="/" className={NavStyles.nav__logo}>
+        <nav className="nav">
+            <Link href="/" className="nav__logo">
                 <svg
                     viewBox="0 0 100 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="nav__logo-image"
                 >
-                    <g clip-path="url(#clip0_2_5828)">
+                    <g clipPath="url(#clip0_2_5828)">
                         <path
                             d="M31.999 0H-0.000976562V32H31.999V0Z"
                             fill="white"
@@ -70,7 +73,39 @@ const Nav = () => {
                 </svg>
             </Link>
 
-            <button className={NavStyles.nav__mobileMenu}>Menu</button>
+            {/* Desktop nav */}
+            <ul className="nav__links">
+                <li className="nav__links-item">
+                    <Link href="/products">Products</Link>
+                </li>
+                <li className="nav__links-item">
+                    <Link href="/services">Services</Link>
+                </li>
+                <li className="nav__links-item">
+                    <Link href="/articles">Articles</Link>
+                </li>
+                <li className="nav__links-item">
+                    <Link href="/about">About us</Link>
+                </li>
+            </ul>
+
+            <ul className="nav__action">
+                <li className="nav__action-cart">
+                    <button>
+                        <Image src={cart} alt="cart" />
+                    </button>
+                </li>
+                <li className="nav__action-profile">
+                    <button>
+                        <Image src={user} alt="user" />
+                    </button>
+                </li>
+            </ul>
+
+            {/* Mobile nav */}
+            <button className="nav__mobile-menu">
+                <span>Menu</span>
+            </button>
         </nav>
     )
 }

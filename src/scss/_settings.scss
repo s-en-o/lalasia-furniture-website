@@ -1,0 +1,28 @@
+:root {
+    --background: #ffffff;
+    --background2: #f3f3f3;
+    --foreground: #151411;
+
+    --dark-100: #d0d0cf;
+    --dark-200: #b1b1b0;
+    --dark-300: #8a8988;
+    --dark-400: #636260;
+    --dark-500: #3c3b39;
+    --dark-600: #151411;
+
+    --font-h1: 64px;
+    --font-h2: 44px;
+    --font-h3: 24px;
+    --font-h4: 20px;
+    --font-h5: 18px;
+    --font-h6: 16px;
+    --font-h6Plus: 14px;
+    --font-p1: 18px;
+    --font-p2: 16px;
+    --font-p3: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+    }
+}
