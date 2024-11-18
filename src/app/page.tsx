@@ -5,6 +5,9 @@ import searchIcon from '@/images/icons/search.svg'
 import icon1 from '@/images/icons/icon-1.svg'
 import icon2 from '@/images/icons/icon-2.svg'
 import icon3 from '@/images/icons/icon-3.svg'
+import prod1 from '@/images/products/prod-1.jpg'
+import prod2 from '@/images/products/prod-2.jpg'
+import prod3 from '@/images/products/prod-3.jpg'
 
 export default function Home() {
     return (
@@ -117,14 +120,70 @@ export default function Home() {
                 </ul>
             </section>
 
-            <section>
-                <small>product</small>
-                <h2>Our popular product</h2>
-                <p>
-                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
-                    dignissim placerat nisi, adipiscing mauris non purus
-                    parturient.
-                </p>
+            <section className="product">
+                <header className="product__header">
+                    <small className="product__subtitle">Product</small>
+                    <h2 className="product__title">Our popular product</h2>
+                    <p className="product__para">
+                        Pellentesque etiam blandit in tincidunt at donec. Eget
+                        ipsum dignissim placerat nisi, adipiscing mauris non
+                        purus parturient.
+                    </p>
+                </header>
+
+                <ul className="product__list">
+                    <li className="product__list-item">
+                        <Image
+                            src={prod1}
+                            alt="product 1"
+                            className="product__list-image"
+                        />
+                        <small className="product__list-category">Chair</small>
+
+                        <h3 className="product__list-title">
+                            White Aesthetic Chair
+                        </h3>
+                        <p className="product__list-para">
+                            Combination of wood and wool
+                        </p>
+
+                        <span className="product__list-price">$63.47</span>
+                    </li>
+                    <li className="product__list-item">
+                        <Image
+                            src={prod2}
+                            alt="product 2"
+                            className="product__list-image"
+                        />
+                        <small className="product__list-category">Chair</small>
+
+                        <h3 className="product__list-title">
+                            White Aesthetic Chair
+                        </h3>
+                        <p className="product__list-para">
+                            Combination of wood and wool
+                        </p>
+
+                        <span className="product__list-price">$63.47</span>
+                    </li>
+                    <li className="product__list-item">
+                        <Image
+                            src={prod3}
+                            alt="product 3"
+                            className="product__list-image"
+                        />
+                        <small className="product__list-category">Chair</small>
+
+                        <h3 className="product__list-title">
+                            White Aesthetic Chair
+                        </h3>
+                        <p className="product__list-para">
+                            Combination of wood and wool
+                        </p>
+
+                        <span className="product__list-price">$63.47</span>
+                    </li>
+                </ul>
             </section>
         </main>
     )

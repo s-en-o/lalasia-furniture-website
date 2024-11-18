@@ -64,6 +64,11 @@ h6 {
 
 p {
     line-height: 130%;
+    font-size: var(--font-p1);
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-p3);
+    }
 }
 
 img {
