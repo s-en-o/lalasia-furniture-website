@@ -26,6 +26,7 @@
 }
 
 .page__image {
+    margin-bottom: 100px;
     @media screen and (min-width: 1024px) {
         position: relative;
     }
@@ -57,7 +58,7 @@
 .page__search-button {
     padding: 10px 26px;
     color: var(--white);
-    background-color: var(--main);
+    background-color: var(--color-main);
     border: 0;
     font-size: var(--font-h6Plus);
     font-weight: 700;
@@ -88,4 +89,85 @@
 .page__search-icon {
     margin-left: 6px;
     margin-right: 12px;
+}
+
+.benefit {
+    p {
+        font-size: var(--font-p1);
+        color: var(--grey-600);
+        font-weight: 500;
+        line-height: 180%;
+
+        @media screen and (min-width: 1024px) {
+            font-size: var(--font-p3);
+        }
+    }
+}
+
+.benefit__header {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        > * {
+            width: 49%;
+            max-width: 427px;
+
+            &:first-child {
+                margin-right: 2%;
+            }
+        }
+    }
+}
+
+.benefit__subtitle {
+    display: block;
+    color: var(--color-orange);
+    font-size: var(--font-h6Plus);
+    font-weight: 700;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-h5);
+    }
+}
+
+.benefit__title {
+    font-size: var(--font-h3);
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-h2);
+    }
+}
+
+.benefit__list {
+    list-style: none;
+    display: grid;
+    gap: 20px 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0 20px;
+    }
+}
+
+.benefit__list-item {
+    background-color: var(--white);
+    padding: 16px;
+}
+
+.benefit__list-icon {
+    margin-bottom: 14px;
+}
+
+.benefit__list-header {
+    margin-bottom: 6px;
 }
