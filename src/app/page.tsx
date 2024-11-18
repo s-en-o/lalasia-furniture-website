@@ -27,7 +27,11 @@ export default function Home() {
                         className="page__search-icon"
                     />
 
-                    <input type="text" className="page__search-input" />
+                    <input
+                        type="text"
+                        className="page__search-input"
+                        placeholder="Ergonomic chair"
+                    />
 
                     <button className="page__search-button">Search</button>
                 </div>
