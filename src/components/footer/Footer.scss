@@ -27,13 +27,18 @@
     }
 }
 
-.footer__logo {
-    margin-bottom: 20px;
-}
-
 .footer__para {
     @extend %p1;
     color: var(--dark-600);
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+
+    @media (min-width: 1024px) {
+        width: 100%;
+        max-width: 130px;
+    }
 }
 
 .footer__links {

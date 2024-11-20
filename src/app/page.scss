@@ -34,7 +34,6 @@
 
 .page__image-item {
     width: 100%;
-    height: auto;
 }
 
 .page__search {
@@ -201,7 +200,6 @@
 .about__info-image {
     display: none;
     width: 100%;
-    height: auto;
 
     @media screen and (min-width: 1024px) {
         display: block;
