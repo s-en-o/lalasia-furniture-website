@@ -12,6 +12,7 @@ import star from '@/images/icons/star.svg'
 import quote from '@/images/icons/quote-up.svg'
 import ProductSlider from '@/components/productSlider/productSlider'
 import Link from 'next/link'
+import ArticleList from '@/components/articleList/articleList'
 
 export default function Home() {
     return (
@@ -229,6 +230,8 @@ export default function Home() {
                     </li>
                 </ul>
             </section>
+
+            <ArticleList />
         </main>
     )
 }
