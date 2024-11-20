@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import '@/scss/global.scss'
 import Nav from '@/components/nav/nav'
+import Footer from '@/components/footer/Footer'
 
 const eudoxus = localFont({
     src: '../fonts/EudoxusSansGX.woff',
@@ -32,6 +33,8 @@ export default function RootLayout({
                 <Nav />
 
                 {children}
+
+                <Footer />
             </body>
         </html>
     )

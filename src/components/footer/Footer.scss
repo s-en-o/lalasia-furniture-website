@@ -1,0 +1,64 @@
+@use '../../scss/abstracts';
+
+.footer {
+    @extend %container;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    margin-bottom: 24px;
+    padding-top: 20px;
+    border-top: 2px solid var(--grey-200);
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0 248px;
+    }
+}
+
+.footer__top {
+    @media (min-width: 1024px) {
+        width: 45%;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+}
+
+.footer__para {
+    @extend %p1;
+    color: var(--dark-600);
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0 50px;
+
+    @media (min-width: 1024px) {
+        width: 60%;
+        grid-template-columns: repeat(3, 33%);
+    }
+}
+
+.footer__item-header {
+    font-size: var(--font-h6);
+    margin-bottom: 14px;
+
+    @media (min-width: 1024px) {
+        font-size: var(--font-h4);
+        margin-bottom: 20px;
+    }
+}
+
+.footer__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+    list-style: none;
+}
