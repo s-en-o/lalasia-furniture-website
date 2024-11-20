@@ -5,9 +5,13 @@ import searchIcon from '@/images/icons/search.svg'
 import icon1 from '@/images/icons/icon-1.svg'
 import icon2 from '@/images/icons/icon-2.svg'
 import icon3 from '@/images/icons/icon-3.svg'
-import prod1 from '@/images/products/prod-1.jpg'
-import prod2 from '@/images/products/prod-2.jpg'
-import prod3 from '@/images/products/prod-3.jpg'
+import highlight1 from '@/images/highlight-1.jpg'
+import highlight2 from '@/images/highlight-2.jpg'
+import person1 from '@/images/person-1.png'
+import star from '@/images/icons/star.svg'
+import quote from '@/images/icons/quote-up.svg'
+import ProductSlider from '@/components/productSlider/productSlider'
+import Link from 'next/link'
 
 export default function Home() {
     return (
@@ -120,68 +124,108 @@ export default function Home() {
                 </ul>
             </section>
 
-            <section className="product">
-                <header className="product__header">
-                    <small className="product__subtitle">Product</small>
-                    <h2 className="product__title">Our popular product</h2>
-                    <p className="product__para">
+            <ProductSlider />
+
+            <section className="about">
+                <header className="about__header">
+                    <small className="about__subtitle">Our Product</small>
+                    <h2 className="about__title">
+                        Crafted by talented and high quality material
+                    </h2>
+
+                    <p className="about__para">
+                        Pellentesque etiam blandit in tincidunt at donec. Eget
+                        ipsum dignissim placerat nisi, adipiscing mauris non
+                        purus parturient.
+                    </p>
+
+                    <Link href="/" className="about__button">
+                        Learn more
+                    </Link>
+
+                    <Image
+                        src={highlight1}
+                        alt="Highlight 1"
+                        className="about__image"
+                    />
+                </header>
+
+                <div className="about__info">
+                    <div className="about__info-detail">
+                        <em>20+</em>
+                        <p>Years Experience</p>
+                    </div>
+
+                    <div className="about__info-detail">
+                        <em>483</em>
+                        <p>Happy Client</p>
+                    </div>
+
+                    <div className="about__info-detail">
+                        <em>150+</em>
+                        <p>Project Finished</p>
+                    </div>
+
+                    <Image
+                        src={highlight2}
+                        alt="Highlight 2"
+                        className="about__info-image"
+                    />
+                </div>
+            </section>
+
+            <section className="testimonial">
+                <header className="testimonial__header">
+                    <small className="testimonial__subtitle">
+                        Testimonials
+                    </small>
+                    <h2 className="testimonial__title">
+                        What our customer say{' '}
+                    </h2>
+                    <p className="testimonial__para">
                         Pellentesque etiam blandit in tincidunt at donec. Eget
                         ipsum dignissim placerat nisi, adipiscing mauris non
                         purus parturient.
                     </p>
                 </header>
 
-                <ul className="product__list">
-                    <li className="product__list-item">
+                <ul className="testimonial__list">
+                    <li className="testimonial__list-item">
                         <Image
-                            src={prod1}
-                            alt="product 1"
-                            className="product__list-image"
+                            src={quote}
+                            alt="quote icon"
+                            className="testimonial__list-image"
                         />
-                        <small className="product__list-category">Chair</small>
 
-                        <h3 className="product__list-title">
-                            White Aesthetic Chair
-                        </h3>
-                        <p className="product__list-para">
-                            Combination of wood and wool
-                        </p>
+                        <blockquote className="testimonial__quote">
+                            Pellentesque etiam blandit in tincidunt at donec.
+                            Eget ipsum dignissim placerat nisi, adipiscing
+                            mauris non.
+                        </blockquote>
 
-                        <span className="product__list-price">$63.47</span>
-                    </li>
-                    <li className="product__list-item">
-                        <Image
-                            src={prod2}
-                            alt="product 2"
-                            className="product__list-image"
-                        />
-                        <small className="product__list-category">Chair</small>
+                        <figure className="testimonial__person">
+                            <Image
+                                src={person1}
+                                alt="Janne Cooper"
+                                className="testimonial__person-photo"
+                            />
 
-                        <h3 className="product__list-title">
-                            White Aesthetic Chair
-                        </h3>
-                        <p className="product__list-para">
-                            Combination of wood and wool
-                        </p>
+                            <figcaption className="testimonial__person-name">
+                                Janne Cooper
+                            </figcaption>
+                        </figure>
 
-                        <span className="product__list-price">$63.47</span>
-                    </li>
-                    <li className="product__list-item">
-                        <Image
-                            src={prod3}
-                            alt="product 3"
-                            className="product__list-image"
-                        />
-                        <small className="product__list-category">Chair</small>
+                        <div className="testimonial__rating">
+                            <Image
+                                src={star}
+                                alt="Janne Cooper"
+                                className="testimonial__rating-icon"
+                            />
 
-                        <h3 className="product__list-title">
-                            White Aesthetic Chair
-                        </h3>
-                        <p className="product__list-para">
-                            Combination of wood and wool
-                        </p>
-
-                        <span className="product__list-price">$63.47</span>
+                            <span className="testimonial__rating-number">
+                                4.3
+                            </span>
+                        </div>
                     </li>
                 </ul>
             </section>

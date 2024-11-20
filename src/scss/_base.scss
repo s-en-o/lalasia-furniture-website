@@ -1,5 +1,16 @@
-@forward './abstracts';
+@use './abstracts';
 
 .container {
     @extend %container;
 }
+
+.button {
+    @extend %button;
+}
+
+// If button element use remove default border style
+button.button {
+    border: 0;
+}
+
+// TODO BUTTON ICON
