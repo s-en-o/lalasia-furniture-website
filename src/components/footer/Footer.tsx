@@ -21,16 +21,24 @@ const Footer = () => {
                         <h3 className="footer__item-header">Products</h3>
                         <ul className="footer__item-list">
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -39,16 +47,24 @@ const Footer = () => {
                         <h3 className="footer__item-header">Services</h3>
                         <ul className="footer__item-list">
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -57,16 +73,24 @@ const Footer = () => {
                         <h3 className="footer__item-header">Follow us</h3>
                         <ul className="footer__item-list">
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                             <li>
-                                <Link href={'/'}>Link</Link>
+                                <Link href={'/'} className="footer__item-link">
+                                    Link
+                                </Link>
                             </li>
                         </ul>
                     </div>
