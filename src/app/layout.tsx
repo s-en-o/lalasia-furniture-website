@@ -32,7 +32,7 @@ export default function RootLayout({
             <body className={`${eudoxus.variable} ${eudoxus2.variable}`}>
                 <Nav />
 
-                {children}
+                <main>{children}</main>
 
                 <Footer />
             </body>

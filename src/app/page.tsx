@@ -13,22 +13,18 @@ import quote from '@/images/icons/quote-up.svg'
 import ProductSlider from '@/components/productSlider/productSlider'
 import Link from 'next/link'
 import ArticleList from '@/components/articleList/articleList'
+import PageHeader from '@/components/pageHeader/pageHeader'
 
 export default function Home() {
     return (
-        <main className="container">
-            <header className="page__header">
-                <h1 className="page__title">
-                    Discover Furniture With High Quality Wood
-                </h1>
-
-                <p className="page__para">
-                    Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
+        <div className="container">
+            <PageHeader
+                title="Discover Furniture With High Quality Wood"
+                para="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum
                     dignissim placerat nisi, adipiscing mauris non. Purus
                     parturient viverra nunc, tortor sit laoreet. Quam tincidunt
-                    aliquam adipiscing tempor.
-                </p>
-            </header>
+                    aliquam adipiscing tempor."
+            />
 
             <div className="page__image">
                 <div className="page__search">
@@ -232,6 +228,6 @@ export default function Home() {
             </section>
 
             <ArticleList />
-        </main>
+        </div>
     )
 }

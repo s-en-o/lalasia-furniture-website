@@ -1,30 +1,5 @@
 @use '../scss/abstracts';
 
-.page__header {
-    text-align: center;
-    padding: 50px 0 30px;
-    max-width: 724px;
-    margin: 0 auto;
-
-    @media screen and (min-width: 1024px) {
-        padding: 100px 0 50px;
-        margin-bottom: 42px;
-    }
-}
-
-.page__title {
-    @extend %h1;
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 30px;
-    }
-}
-
-.page__para {
-    @extend %p1;
-}
-
 .page__image {
     margin-bottom: 100px;
     @media screen and (min-width: 1024px) {
@@ -324,11 +299,20 @@
     width: 28px;
     height: 28px;
     margin-right: 14px;
+
+    @media screen and (min-width: 1024px) {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .testimonial__person-name {
     font-size: var(--font-h6Plus);
     font-weight: 700;
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-h4);
+    }
 }
 
 .testimonial__rating {
@@ -343,6 +327,10 @@
 
 .testimonial__rating {
     grid-area: footerRight;
+
+    @media screen and (min-width: 1024px) {
+        font-size: var(--font-h5);
+    }
 }
 
 .testimonial__rating-icon {

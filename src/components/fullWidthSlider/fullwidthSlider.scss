@@ -1,0 +1,36 @@
+.slider__label {
+    border-radius: 16px;
+    padding: 6px 10px;
+    background-color: var(--color-main);
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.slider__title {
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.slider__para {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.slider__item {
+    background: no-repeat center/cover;
+    position: relative;
+    color: var(--white);
+}
+
+.slider__content {
+    padding: 40px 24px;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.2) 70%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
